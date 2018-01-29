@@ -1,0 +1,15 @@
+export const createPatient = "CREATE_PATIENT";
+export const createPatientSuccess = "CREATE_PATIENT_SUCCESS";
+export const createPatientFailure = "CREATE_PATIENT_FAILURE";
+export const loadPatients = "LOAD_PATIENTS";
+export const loadPatientsSuccess = "LOAD_PATIENTS_SUCCESS";
+export const loadPatientsFailure = "LOAD_PATIENTS_FAILURE";
+export const searchPatient = "SEARCH_PATIENT";
+export const userNotFound = "PATIENT_NOT_FOUND";
+export const updatePatient = "UPDATE_PATIENT";
+export const updatePatientSuccess = "UPDATE_PATIENT_SUCCESS";
+export const updatePatientFailure = "UPDATE_PATIENT_FAILURE";
+export const loadPatientAppts = "LOAD_PATIENT_APPTS";
+export const loadPatientReceipts = "LOAD_PATIENT_RECEIPTS";
+export const sortByRevenue = "SORT_PATIENTS_BY_REVENUE";
+export const sortByAppts = "SORT_PATIENTS_BY_NO_OF_APPTS";

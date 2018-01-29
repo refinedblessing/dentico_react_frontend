@@ -19,6 +19,5 @@ export {
   completeAppt,
   completeApptSuccess,
   completeApptFailure,
-  loadAllAppts,
-  filterAppts
+  loadAllAppts
 };
