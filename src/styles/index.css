@@ -1,15 +1,74 @@
+.App {
+  margin-bottom: 60px;
+}
+
+.header {
+  text-align: center;
+}
+
 .footer {
-  position: absolute;
-  bottom: 0;
   width: 100%;
   height: 60px;
   line-height: 60px;
   text-align: center;
 }
 
-.header {
-  text-align: center;
+button:focus,
+.btn:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0;
 }
+
+.Patient .table thead  th {
+  border-top: 0;
+}
+
+/* Modal Styling */
+
+.PatientModal.in.fade {
+  opacity: 1;
+}
+
+.modal-backdrop.in {
+  opacity: .7;
+}
+
+.PatientModal.modal.in .modal-dialog {
+  -webkit-transform: translate(0,20%);
+  transform: translate(0, 20%);
+}
+
+.PatientModal .modal-header {
+  display: block;
+}
+
+.PatientModal .form-horizontal {
+  display: -ms-grid;
+  display: grid
+}
+
+.PatientModal .col-md-10,
+.PatientModal .col-lg-10,
+.PatientModal .col-sm-10,
+.PatientModal .col-lg-2,
+.PatientModal .col-md-2,
+.PatientModal .col-sm-2  {
+  float: left;
+}
+
+/* Add Patient Button */
+.AddPatient svg.svg-inline--fa.fa-plus-circle.fa-w-16 {
+  width: 50px;
+  height: 50px;
+  color: #007bff;
+  position: fixed;
+  right: 3%;
+  bottom: 12%;
+  z-index: 1020;
+  background-color: white;
+}
+
+/* Sidebar Styling */
 
 .sidebar {
   position: fixed;
@@ -27,7 +86,7 @@
   padding: 1rem 1rem;
 }
 
-.feather {
+.sidebar .feather {
   width: 16px;
   height: 16px;
   vertical-align: text-bottom;
@@ -41,4 +100,26 @@
 .sidebar .nav-link:hover .feather,
 .sidebar .nav-link.active .feather {
   color: inherit;
+}
+
+/* Mobile View */
+
+@media (max-width: 767px) {
+  .col-sm-2 .nav-item-text {
+    display: none;
+  }
+
+  .sidebar.col-sm-2 {
+    width: 50px;
+  }
+
+  .main {
+    margin-left: 50px;
+  }
+}
+
+.btn-primary:disabled,
+.btn.disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
 }
